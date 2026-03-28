@@ -1,6 +1,6 @@
 {
-    "name": "photo_compare",
-    "short_name": "photo_compare",
+    "name": "kalis",
+    "short_name": "kalis",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

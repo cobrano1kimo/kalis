@@ -14,7 +14,9 @@ class CompositeStorageService {
 
   static final CompositeStorageService instance = CompositeStorageService._();
 
-  static const String _folderName = 'photo_compare_composites';
+  /// 舊版曾使用 `photo_compare_composites`；仍一併掃描以相容先前存檔。
+  static const String _folderName = 'kalis_composites';
+  static const String _legacyFolderName = 'photo_compare_composites';
 
   Directory? _dir;
 
@@ -41,13 +43,22 @@ class CompositeStorageService {
 
   /// 列出所有 .jpg / .jpeg / .png（依副檔名），新到舊排序。
   Future<List<SavedCompositeItem>> listComposites() async {
-    final dir = await outputDirectory;
-    if (!await dir.exists()) return [];
+    final base = await getApplicationDocumentsDirectory();
+    final dirs = <Directory>[
+      await outputDirectory,
+      Directory(p.join(base.path, _legacyFolderName)),
+    ];
 
-    final entities = dir.listSync(followLinks: false).whereType<File>().where((f) {
-      final ext = p.extension(f.path).toLowerCase();
-      return ext == '.jpg' || ext == '.jpeg' || ext == '.png';
-    }).toList();
+    final entities = <File>[];
+    for (final dir in dirs) {
+      if (!await dir.exists()) continue;
+      entities.addAll(
+        dir.listSync(followLinks: false).whereType<File>().where((f) {
+          final ext = p.extension(f.path).toLowerCase();
+          return ext == '.jpg' || ext == '.jpeg' || ext == '.png';
+        }),
+      );
+    }
 
     entities.sort((a, b) {
       final ta = a.lastModifiedSync();

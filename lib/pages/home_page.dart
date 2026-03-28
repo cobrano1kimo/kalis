@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Photo Compare',
+                      '卡莉絲',
                       style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                             fontWeight: FontWeight.w700,
                             color: scheme.primary,
@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      '團隊產品輔助工具',
+                      'Kalis · 團隊產品輔助',
                       style: Theme.of(context).textTheme.titleSmall?.copyWith(
                             color: scheme.onSurfaceVariant,
                             fontWeight: FontWeight.w500,
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      '前後對比拼接、作品庫與教學影片，操作簡潔、適合手機日常使用。',
+                      '內含多項工具；其中「Photo Compare」提供前後對比拼接與本機作品庫，並附教學影片入口。',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                             color: scheme.onSurfaceVariant,
                             height: 1.45,
@@ -56,8 +56,8 @@ class HomePage extends StatelessWidget {
               sliver: SliverList(
                 delegate: SliverChildListDelegate([
                   FeatureCard(
-                    title: '前後對比拼接',
-                    subtitle: '拍照或從相簿選擇 Before / After，上下拼接、等寬不變形。',
+                    title: 'Photo Compare｜前後對比拼接',
+                    subtitle: '卡莉絲內建圖像工具：拍照或相簿選 Before / After，上下拼接、等寬不變形。',
                     icon: Icons.compare_rounded,
                     onTap: () => Navigator.of(context).push(
                       MaterialPageRoute<void>(builder: (_) => const StitchPage()),
@@ -65,8 +65,8 @@ class HomePage extends StatelessWidget {
                   ),
                   const SizedBox(height: 14),
                   FeatureCard(
-                    title: '我的拼接成果',
-                    subtitle: '瀏覽本 App 儲存的拼接圖（App 內作品庫，非系統檔案總管）。',
+                    title: 'Photo Compare｜我的拼接成果',
+                    subtitle: '瀏覽 Photo Compare 儲存的拼接圖（App 內作品庫）。',
                     icon: Icons.photo_library_outlined,
                     onTap: () => Navigator.of(context).push(
                       MaterialPageRoute<void>(builder: (_) => const GalleryPage()),

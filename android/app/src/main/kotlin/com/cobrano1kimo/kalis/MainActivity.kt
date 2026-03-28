@@ -1,4 +1,4 @@
-package com.cobrano1kimo.photo_compare
+package com.cobrano1kimo.kalis
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.cobrano1kimo.photo_compare"
+    namespace = "com.cobrano1kimo.kalis"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -21,7 +21,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.cobrano1kimo.photo_compare"
+        applicationId = "com.cobrano1kimo.kalis"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         // image_picker 建議 24+；YouTube WebView / 相簿行為較穩定

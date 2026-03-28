@@ -1,12 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:photo_compare/app.dart';
+import 'package:kalis/app.dart';
 
 void main() {
-  testWidgets('App loads home title', (WidgetTester tester) async {
-    await tester.pumpWidget(const PhotoCompareApp());
+  testWidgets('App loads Kalis home title', (WidgetTester tester) async {
+    await tester.pumpWidget(const KalisApp());
     await tester.pumpAndSettle();
 
-    expect(find.text('Photo Compare'), findsOneWidget);
-    expect(find.text('前後對比拼接'), findsOneWidget);
+    expect(find.text('卡莉絲'), findsOneWidget);
+    expect(find.textContaining('Photo Compare'), findsWidgets);
   });
 }

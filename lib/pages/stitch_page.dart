@@ -156,7 +156,7 @@ class _StitchPageState extends State<StitchPage> {
       await CompositeStorageService.instance.saveJpegBytes(bytes);
       if (mounted) {
         setState(() => _busy = false);
-        _showSnack('已儲存至「我的拼接成果」資料夾。');
+        _showSnack('已儲存至 Photo Compare 作品資料夾（卡莉絲 App 內）。');
       }
     } catch (e) {
       if (mounted) {
@@ -177,7 +177,7 @@ class _StitchPageState extends State<StitchPage> {
     final scheme = Theme.of(context).colorScheme;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('前後對比拼接'),
+        title: const Text('Photo Compare · 前後對比拼接'),
       ),
       body: Stack(
         children: [
@@ -250,7 +250,7 @@ class _StitchPageState extends State<StitchPage> {
               ),
               const SizedBox(height: 24),
               Text(
-                '說明：成果儲存在 App 專用資料夾，可於「我的拼接成果」查看。'
+                '說明：Photo Compare 成果儲存在 App 專用資料夾，可於「Photo Compare｜我的拼接成果」查看。'
                 ' 因系統隱私限制，此處不提供開啟全系統檔案管理員。',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
                       color: scheme.outline,

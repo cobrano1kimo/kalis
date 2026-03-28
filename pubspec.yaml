@@ -1,5 +1,5 @@
-name: photo_compare
-description: "Photo Compare — 團隊用前後對比拼接、本機作品庫與教學影片（MVP）"
+name: kalis
+description: "卡莉絲（Kalis）— 團隊產品輔助 App；含 Photo Compare 前後對比拼接、作品庫與教學影片等（MVP）"
 publish_to: "none"
 
 version: 1.0.0+1

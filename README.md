@@ -1,17 +1,18 @@
-# photo_compare
+# 卡莉絲（Kalis）
 
-A new Flutter project.
+團隊產品輔助 App（Flutter）。
 
-## Getting Started
+## 功能概覽
 
-This project is a starting point for a Flutter application.
+- **Photo Compare**：前後對比拼接（Before / After）、本機作品庫、分享／刪除。
+- **教學影片**：YouTube 內嵌播放（假資料可換成 API）。
 
-A few resources to get you started if this is your first Flutter project:
+## 開發
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+flutter pub get
+flutter run
+flutter test
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+GitHub：`https://github.com/cobrano1kimo/kalis`

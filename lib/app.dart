@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'pages/home_page.dart';
 
-/// 應用程式根 Widget：主題與路由入口。
-class PhotoCompareApp extends StatelessWidget {
-  const PhotoCompareApp({super.key});
+/// 卡莉絲（Kalis）— 應用程式根 Widget：主題與路由入口。
+class KalisApp extends StatelessWidget {
+  const KalisApp({super.key});
 
   static const Color _primary = Color(0xFF1E3A5F);
   static const Color _secondary = Color(0xFF2D6A8E);
@@ -37,7 +37,7 @@ class PhotoCompareApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'Photo Compare',
+      title: '卡莉絲',
       debugShowCheckedModeBanner: false,
       theme: base,
       home: const HomePage(),

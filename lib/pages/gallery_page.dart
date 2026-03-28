@@ -26,7 +26,7 @@ class _GalleryPageState extends State<GalleryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('我的拼接成果'),
+        title: const Text('Photo Compare · 我的拼接成果'),
       ),
       body: RefreshIndicator(
         onRefresh: () async => setState(() {}),
