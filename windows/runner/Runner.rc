@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.cobrano1kimo" "\0"
-            VALUE "FileDescription", "kalis" "\0"
+            VALUE "FileDescription", "photo_compare" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "kalis" "\0"
+            VALUE "InternalName", "photo_compare" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.cobrano1kimo. All rights reserved." "\0"
-            VALUE "OriginalFilename", "kalis.exe" "\0"
-            VALUE "ProductName", "kalis" "\0"
+            VALUE "OriginalFilename", "photo_compare.exe" "\0"
+            VALUE "ProductName", "photo_compare" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
